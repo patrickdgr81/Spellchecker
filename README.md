@@ -1,4 +1,4 @@
 Spellchecker
 ============
 
-Simple Online Spellchecker using Ajax. Uses html, php, xml, javascript, and ajax.
+Simple Online Spellchecker. Uses html, php, xml, javascript, and ajax.
