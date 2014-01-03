@@ -6,10 +6,10 @@ echo '<response>';
 	$food = $_GET['food'];
 	$foodArray = array('tuna','bacon','mcdonalds','beef','ham','meat');
 	if (in_array($food, $foodArray))
-		echo 'We do have '.$food.'!';
+		echo $food.' is a word!';
 	elseif($food=='')
-		echo 'Enter a food you idiot';
+		echo 'Enter a word';
 	else
-		echo 'We dont have '.$food.'...';
+		echo $food.' is not a word';
 echo '</response>';
 ?>
