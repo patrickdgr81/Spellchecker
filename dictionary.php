@@ -4,7 +4,8 @@ echo '<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>';
 
 echo '<response>';
 	$word = $_GET['word'];
-	$wordArray = array('tuna','bacon','mcdonalds','beef','ham','meat');
+	//$wordArray = array('tuna','bacon','mcdonalds','beef','ham','meat');
+	$wordArray = explode("\n", file_get_contents('smalldict.words'));
 	if (in_array($word, $wordArray))
 		echo $word.' is a word!';
 	elseif($word=='')
