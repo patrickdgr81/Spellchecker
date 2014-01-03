@@ -26,8 +26,8 @@ function createXmlHttpRequestObject(){
 
 function process(){
 	if(xmlHttp.readyState==0 || xmlHttp.readyState==4){
-		food = encodeURIComponent(document.getElementById('userInput').value);
-		xmlHttp.open("GET", "dictionary.php?food=" + food,true);
+		word = encodeURIComponent(document.getElementById('userInput').value);
+		xmlHttp.open("GET", "dictionary.php?word=" + word,true);
 		xmlHttp.onreadystatechange = handleServerResponse;
 		xmlHttp.send(null);
 	}

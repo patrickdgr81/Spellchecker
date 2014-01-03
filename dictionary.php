@@ -3,13 +3,13 @@ header('Content-Type: text/xml');
 echo '<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>';
 
 echo '<response>';
-	$food = $_GET['food'];
-	$foodArray = array('tuna','bacon','mcdonalds','beef','ham','meat');
-	if (in_array($food, $foodArray))
-		echo $food.' is a word!';
-	elseif($food=='')
+	$word = $_GET['word'];
+	$wordArray = array('tuna','bacon','mcdonalds','beef','ham','meat');
+	if (in_array($word, $wordArray))
+		echo $word.' is a word!';
+	elseif($word=='')
 		echo 'Enter a word';
 	else
-		echo $food.' is not a word';
+		echo $word.' is not a word';
 echo '</response>';
 ?>
